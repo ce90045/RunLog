@@ -1,0 +1,72 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000011 /* RunLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000001 /* RunLogApp.swift */; };
+		A00000000000000000000012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000002 /* ContentView.swift */; };
+		A00000000000000000000013 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000003 /* WorkoutManager.swift */; };
+		A00000000000000000000014 /* WorkoutModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000004 /* WorkoutModels.swift */; };
+		A00000000000000000000015 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000005 /* HealthKitManager.swift */; };
+		A00000000000000000000016 /* WorkoutHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000009 /* WorkoutHistoryStore.swift */; };
+		A00000000000000000000017 /* WorkoutHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000010 /* WorkoutHistoryView.swift */; };
+		A00000000000000000000018 /* RouteSpeedStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000011 /* RouteSpeedStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000001 /* RunLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A00000000000000000000003 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		A00000000000000000000004 /* WorkoutModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModels.swift; sourceTree = "<group>"; };
+		A00000000000000000000005 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		A00000000000000000000006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00000000000000000000007 /* RunLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunLog.entitlements; sourceTree = "<group>"; };
+		A00000000000000000000008 /* RunLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000009 /* WorkoutHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryStore.swift; sourceTree = "<group>"; };
+		A00000000000000000000010 /* WorkoutHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryView.swift; sourceTree = "<group>"; };
+		A00000000000000000000011 /* RouteSpeedStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSpeedStyle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000021 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000030 = {isa = PBXGroup; children = (A00000000000000000000031 /* RunLog */, A00000000000000000000032 /* Products */); sourceTree = "<group>"; };
+		A00000000000000000000031 /* RunLog */ = {isa = PBXGroup; children = (A00000000000000000000001 /* RunLogApp.swift */, A00000000000000000000002 /* ContentView.swift */, A00000000000000000000003 /* WorkoutManager.swift */, A00000000000000000000004 /* WorkoutModels.swift */, A00000000000000000000005 /* HealthKitManager.swift */, A00000000000000000000009 /* WorkoutHistoryStore.swift */, A00000000000000000000010 /* WorkoutHistoryView.swift */, A00000000000000000000011 /* RouteSpeedStyle.swift */, A00000000000000000000006 /* Info.plist */, A00000000000000000000007 /* RunLog.entitlements */); path = RunLog; sourceTree = "<group>"; };
+		A00000000000000000000032 /* Products */ = {isa = PBXGroup; children = (A00000000000000000000008 /* RunLog.app */); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000040 /* RunLog */ = {isa = PBXNativeTarget; buildConfigurationList = A00000000000000000000041 /* Build configuration list for PBXNativeTarget "RunLog" */; buildPhases = (A00000000000000000000020 /* Sources */, A00000000000000000000021 /* Frameworks */, A00000000000000000000022 /* Resources */); buildRules = (); dependencies = (); name = RunLog; productName = RunLog; productReference = A00000000000000000000008 /* RunLog.app */; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000050 /* Project object */ = {isa = PBXProject; attributes = { LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; TargetAttributes = { A00000000000000000000040 = { CreatedOnToolsVersion = 15.0; SystemCapabilities = { com.apple.HealthKit = { enabled = 1; }; }; }; }; }; buildConfigurationList = A00000000000000000000051 /* Build configuration list for PBXProject "RunLog" */; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, ko); mainGroup = A00000000000000000000030; productRefGroup = A00000000000000000000032 /* Products */; projectDirPath = ""; projectRoot = ""; targets = (A00000000000000000000040 /* RunLog */); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000022 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000020 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000011 /* RunLogApp.swift in Sources */, A00000000000000000000012 /* ContentView.swift in Sources */, A00000000000000000000013 /* WorkoutManager.swift in Sources */, A00000000000000000000014 /* WorkoutModels.swift in Sources */, A00000000000000000000015 /* HealthKitManager.swift in Sources */, A00000000000000000000016 /* WorkoutHistoryStore.swift in Sources */, A00000000000000000000017 /* WorkoutHistoryView.swift in Sources */, A00000000000000000000018 /* RouteSpeedStyle.swift in Sources */); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000060 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 5.0; }; name = Debug; };
+		A00000000000000000000061 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 5.0; }; name = Release; };
+		A00000000000000000000062 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { CODE_SIGN_ENTITLEMENTS = RunLog/RunLog.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = RunLog/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.RunLog; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1"; }; name = Debug; };
+		A00000000000000000000063 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { CODE_SIGN_ENTITLEMENTS = RunLog/RunLog.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = RunLog/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.RunLog; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1"; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000051 /* Build configuration list for PBXProject "RunLog" */ = {isa = XCConfigurationList; buildConfigurations = (A00000000000000000000060 /* Debug */, A00000000000000000000061 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A00000000000000000000041 /* Build configuration list for PBXNativeTarget "RunLog" */ = {isa = XCConfigurationList; buildConfigurations = (A00000000000000000000062 /* Debug */, A00000000000000000000063 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000050 /* Project object */;
+}
