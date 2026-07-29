@@ -85,6 +85,52 @@ git push origin main
 
 다른 Mac에서 이어서 작업할 때는 먼저 `git pull origin main`을 실행한 뒤 Xcode 프로젝트를 여세요.
 
+## Mac에서 Codex와 함께 작업하기
+
+가능합니다. Codex는 프로젝트 코드를 읽고 수정하거나, 오류 원인을 분석하고, 테스트와 Git 작업을 도울 수 있습니다. 단, iPhone의 코드 서명·실기기 설치·시뮬레이터 실행은 Xcode가 담당합니다. 두 도구를 함께 사용하는 방식이 가장 편리합니다.
+
+### 방법 1: Codex 데스크톱 앱 사용
+
+1. Mac에 Codex 데스크톱 앱을 설치하고 OpenAI 계정으로 로그인합니다. 계정 또는 조직의 Codex 사용 권한이 필요할 수 있습니다.
+2. 앱에서 이 저장소를 작업 폴더(워크스페이스)로 엽니다.
+3. 다음처럼 구체적으로 요청합니다.
+
+   ```text
+   RunLog iPhone 앱을 검토해줘. Xcode 빌드 오류가 있으면 원인을 찾아 수정하고,
+   실제 iPhone에서 GPS 경로 기록을 검증할 체크리스트도 알려줘.
+   ```
+
+4. Codex가 변경한 파일을 확인한 뒤, Xcode로 돌아가 `⌘B`(빌드) 또는 `⌘R`(실행)으로 검증합니다.
+5. 변경이 만족스러우면 Codex 또는 Terminal에서 Git 커밋과 푸시를 진행합니다.
+
+### 방법 2: Terminal에서 Codex CLI 사용
+
+Node.js가 설치된 Mac Terminal에서 Codex CLI를 설치하고 실행할 수 있습니다. 설치 및 로그인 방법은 버전에 따라 바뀔 수 있으므로 [공식 Codex 문서](https://developers.openai.com/codex/)를 먼저 확인하세요.
+
+일반적인 작업 흐름은 다음과 같습니다.
+
+```bash
+cd RunLog
+codex
+```
+
+실행 후에는 자연어로 요청하면 됩니다.
+
+```text
+현재 Xcode 프로젝트를 분석해줘. iOS 17에서 빌드되지 않을 가능성이 있는 코드를 찾고,
+수정 전에는 변경 예정 파일과 이유를 먼저 설명해줘.
+```
+
+### 권장 협업 흐름
+
+1. Xcode에서 빌드 오류나 원하는 기능을 확인합니다.
+2. Codex에 오류 메시지 또는 기능 요구사항을 전달합니다.
+3. Codex가 소스 변경을 제안하거나 적용합니다.
+4. Xcode에서 `⌘B` 또는 실제 iPhone의 `⌘R`로 결과를 확인합니다.
+5. 정상 동작하면 `git status`, `git add`, `git commit`, `git push` 순서로 GitHub에 반영합니다.
+
+> 팁: Codex에 요청할 때는 "어떤 기기(iPhone)", "최소 지원 버전(iOS 17)", "변경 후 Xcode 빌드까지 확인"을 함께 적으면 더 정확한 도움을 받을 수 있습니다.
+
 ## 문제 해결
 
 ### `Signing for RunLog requires a development team` 오류
